@@ -1,0 +1,38 @@
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 896px; /* This is what tripped me up in class. The gameboard is a different size than the origional example*/
+    height: 896px;
+}
+.gridCell{
+    width: 30px;
+    height: 30px;
+    border: 1px solid silver;
+    background-color: navy;
+}
+.hallway{
+    background-color: silver;
+}
+.wall{
+    background-color: black;
+}
+.ghostLair{
+    background-color: red;
+}
+.pellet{
+    background-color: yellow;
+    border-radius: 50%;
+}
+.powerPellet{
+    background-color: orange;
+    border-radius: 25%;
+}
+
+/*
+TIP:
+    When creating a grid for your project, you can use a spreadsheet to help calculate the width and height of your grid.
+
+    If your cells are 50px by 50px, with a 10px margin around the edges, the width of your grid will be 52px X the number of cells you want accross.
+    The height of your grid will be 52px X the number of cells you want down.
+
+*/
